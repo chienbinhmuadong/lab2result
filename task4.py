@@ -16,8 +16,6 @@ for i in list_evennum:
 average_odd=0
 for i in list_oddnum:
     average_odd+=i/125
-percent_even=average_even/(average_even+average_odd)*100
-percent_odd=average_odd/(average_even+average_odd)*100
 number=numpy.array(["среднее чётных чисел","среднее нечётных чисел"])
 value=numpy.array([average_even,  average_odd])
 pyplot.bar(number, value)
