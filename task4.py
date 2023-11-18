@@ -3,7 +3,7 @@ import numpy
 list_oddnum=[]
 list_evennum=[]
 count=0
-with open("D:/nam nhat/term1/Programming/lab2/sequence.txt","r") as file :
+with open("sequence.txt","r") as file :
     for line in file:
         count+=1
         if count % 2==0:
