@@ -3,10 +3,12 @@ green='\u001b[42m'
 red='\u001b[41m'
 reset='\u001b[0m'
 print('изображение флага Литвы: ')
-for i in range (6):
-    if i ==0 or i ==1 :
-        print(f'{yellow}{" "*20}{reset}')
-    elif i ==2 or i==3:
-        print(f'{green}{" "*20}{reset}')
+row=6
+length=20
+for i in range (row):
+    if i in [0,1] :
+        print(f'{yellow}{" "*length}{reset}')
+    elif i in [2,3] :
+        print(f'{green}{" "*length}{reset}')
     else:
-        print(f'{red}{" "*20}{reset}')
+        print(f'{red}{" "*length}{reset}')
